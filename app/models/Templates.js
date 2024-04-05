@@ -22,6 +22,8 @@ export class Templates {
 
     static get Settings() {
         let content = /*html*/`
+        <label>City</label>
+        <input type="text" class="form-control my-2" value="${AppState.settings.city}" onchange="app.SettingsController.setSetting('city', this.value)">
         <label>Background Image Categories</label>
         <input type="text" class="form-control my-2" value="${AppState.settings.categories}" onchange="app.SettingsController.setSetting('categories', this.value)">
         <label>Temperature Unit</label>

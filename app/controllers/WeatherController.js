@@ -6,6 +6,7 @@ import { setHTML } from "../utils/Writer.js"
 
 export class WeatherController {
     constructor() {
+        AppState.on('settings', this.getWeather)
         AppState.on('weather', this.drawWeather)
         this.getWeather()
     }

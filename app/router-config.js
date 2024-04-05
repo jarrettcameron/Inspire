@@ -13,7 +13,7 @@ import { Router } from "./utils/Router.js";
 export const router = new Router([
   {
     path: '',
-    controllers: [ImageController, QuoteController, PopupController, TODOController, WeatherController, SettingsController],
+    controllers: [SettingsController, ImageController, QuoteController, PopupController, TODOController, WeatherController],
     view: 'app/views/MainView.html'
   },
   {

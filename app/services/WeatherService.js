@@ -7,7 +7,7 @@ class WeatherService {
     }
 
     async getWeather() {
-        const response = await api.get('api/weather?name=' + AppState.settings.city)
+        const response = await api.get('api/weather?city=' + AppState.settings.city)
         AppState.weather = response.data
     }
 }
