@@ -2,15 +2,16 @@
     <div class="row flex-column justify-content-between align-items-center">
         <div class="col-12">
             <div class="row justify-content-between align-items-center mt-1">
-                <div class="ps-3 col-1">
+                <div class="col-lg-4 col-2">
                     <i onclick="app.PopupController.performPopup('Settings')"
                         class="pointer fs-3 mdi mdi-cog-outline"></i>
+                    <i onclick="app.AuthController.logout()" class="pointer fs-3 ms-2 mdi mdi-logout"></i>
                 </div>
-                <div class="col-lg-4 col-md-5 col-11">
-                    <div
+                <div class="col-lg-4 col-md-5 col-10">
+                    <div onclick="app.PopupController.performPopup('Todos')"
                         class="d-inline pointer float-end frosted px-4 py-1 inter fw-semi fs-5 fw-light rounded rounded-pill ">
                         <i class="pe-2 mdi mdi-arrow-right-thick"></i>
-                        <span>0 Todos Remaining</span>
+                        <span id="todo-count">0 Todos Remaining</span>
                     </div>
                 </div>
             </div>
@@ -23,15 +24,15 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="row justify-content-between">
-                <div class="col-2">
+            <div class="row justify-content-lg-between justify-content-center align-items-end">
+                <div class="order-2 order-lg-1 col-xl-2 col-lg-3 col-3 frosted ms-2 mb-2" id="weather">
 
                 </div>
-                <div class="col-xl-4 col-lg-5 col-md-7 col-8 mb-3">
+                <div class="order-1 order-lg-2 col-xl-4 col-lg-5 col-md-7 col-8 mb-3">
                     <h4 class="inter fw-semi text-center" id="quote"></h4>
                     <h5 class="inter fw-semi text-end" id="author"></h5>
                 </div>
-                <div class="col-2">
+                <div class="order-3 col-xl-2 col-lg-3">
 
                 </div>
             </div>

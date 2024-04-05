@@ -23,7 +23,7 @@ export class ImageController {
 
     drawTime() {
         let date = new Date()
-        setText('time', date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }).toLowerCase())
+        setText('time', date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: !AppState.settings.militaryTime }).toLowerCase())
     }
 
     preloadImage() {
