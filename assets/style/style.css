@@ -2,6 +2,7 @@ body {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  cursor: default !important;
 }
 
 .popupCard {
@@ -50,7 +51,7 @@ body {
 }
 
 .pointer {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 #homepage,

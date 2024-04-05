@@ -1,8 +1,8 @@
+import { AppState } from "../AppState.js";
 import { Templates } from "../models/Templates.js";
 
 export class PopupController {
     constructor() {
-
     }
 
     performPopup(name) {
