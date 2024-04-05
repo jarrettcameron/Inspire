@@ -15,7 +15,7 @@ function drawUser() {
     ${button}
   `
   // @ts-ignore
-  document.getElementById('authstate').innerHTML = template
+  //document.getElementById('authstate').innerHTML = template
 }
 
 function _drawAuthSettings() {
@@ -30,9 +30,9 @@ function _drawAuthSettings() {
 }
 export class AuthController {
   constructor() {
-    AppState.on('account', drawUser)
-    AuthService.on(AuthService.AUTH_EVENTS.LOADED, drawUser)
-    AuthService.on(AuthService.AUTH_EVENTS.LOADED, _drawAuthSettings)
+    //AppState.on('account', drawUser)
+    //AuthService.on(AuthService.AUTH_EVENTS.LOADED, drawUser)
+    //AuthService.on(AuthService.AUTH_EVENTS.LOADED, _drawAuthSettings)
     drawUser()
   }
 

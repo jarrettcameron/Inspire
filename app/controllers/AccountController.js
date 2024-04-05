@@ -6,8 +6,8 @@ import { setHTML } from "../utils/Writer.js";
 
 function _drawAccount() {
   if (!AppState.account) { return }
-  setHTML('account-details', AppState.account.AccountCardTemplate)
-  setHTML('account-form', AppState.account.AccountFormTemplate)
+  //setHTML('account-details', AppState.account.AccountCardTemplate)
+  //setHTML('account-form', AppState.account.AccountFormTemplate)
 }
 
 export class AccountController {

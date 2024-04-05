@@ -1,4 +1,36 @@
-/* BASIC STYLES HERE */
+body {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.popupCard {
+  min-height: 70dvh;
+}
+
+#quote+#author {
+  opacity: 0;
+}
+
+#quote:hover+#author,
+#author:hover {
+  opacity: 1;
+  transition: all 2s ease;
+}
+
+.reem {
+  font-family: 'Reem Kufi Fun', sans-serif;
+  font-weight: 700;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.fw-semi {
+  font-weight: 600 !important;
+}
+
 .profile-picture {
   height: 200px;
   max-width: 100%;
@@ -8,4 +40,21 @@
 
 .profile-picture.profile-picture-sm {
   height: 64px;
+}
+
+.frosted {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(13px);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#homepage,
+#homepage>div,
+#popup>div {
+  min-height: 100dvh;
 }
