@@ -72,15 +72,15 @@ export class Templates {
     static Weather(weatherData) {
         return /*html*/`
         <div class="row p-2 align-items-center">
-            <div class="col">
+            <div class="col pe-1">
                 <img src="${weatherData.weather.icon}" class="d-inline weather-icon" alt="">
                 <div class="d-inline">
                     <span class="fs-5">${weatherData.name}</span>
-                    <span class="ps-1">${weatherData.weather[0].main}</span>
+                    <span class="">${weatherData.weather[0].main}</span>
                 </div>
             </div>
-            <div class="col-3 me-2 reem text-end">
-                <span class="fs-2 pointer" title="Click to switch units" onclick="app.WeatherController.changeWeatherPref()">${this.weatherFormat(weatherData.main.temp)}</span>
+            <div class="col-2 reem text-end">
+                <span class="fs-2 pointer float-end" title="Click to switch units" onclick="app.WeatherController.changeWeatherPref()">${this.weatherFormat(weatherData.main.temp)}</span>
             </div>
         </div>
         `
