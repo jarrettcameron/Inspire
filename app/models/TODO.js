@@ -11,10 +11,10 @@ export class TODO {
             <div class="col-1">
                 <input onchange="app.TODOController.toggleTODO('${this.id}')" class="pointer form-check-input" type="checkbox" ${this.completed ? 'checked' : ''}>
             </div>
-            <div class="col-10">
+            <div class="col">
                 <span>${this.description}</span>
             </div>
-            <div class="col-1">
+            <div class="col-1 pe-5">
                 <i onclick="app.TODOController.deleteTODO('${this.id}')" class="pointer mdi mdi-delete"></i>
             </div>
         </div>
