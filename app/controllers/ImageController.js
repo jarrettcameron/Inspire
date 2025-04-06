@@ -6,7 +6,7 @@ import { setText } from "../utils/Writer.js";
 export class ImageController {
     constructor() {
         this.drawTime()
-        AppState.on('image', this.preloadImage) // Instead of drawing we load the image into a hidden image element to load it into the browser and use the onload event to set the background once the image has fully loaded. This makes it way more seamless.
+        AppState.on('image', this.preloadImage) // Instead of drawing we load the image into a hidden image element to load it into the browser and use the onload event to set the background once the image has fully loaded. This makes it seamless.
         this.getImage()
         setInterval(this.drawTime, 1000)
         setInterval(this.getImage, 60000)
@@ -27,7 +27,8 @@ export class ImageController {
     }
 
     preloadImage() {
-        document.querySelector('#preloader').setAttribute('src', AppState.image)
+        if (!AppState.image) return;
+        document.querySelector('#preloader')?.setAttribute('src', AppState.image)
     }
 
     drawImage() {

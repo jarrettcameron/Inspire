@@ -1,0 +1,6 @@
+version: '3'
+services:
+  app:
+    image: jarrettcameron/inspire:latest
+    ports:
+      - "7048:80"
