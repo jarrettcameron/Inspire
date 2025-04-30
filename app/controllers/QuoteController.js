@@ -19,7 +19,7 @@ export class QuoteController {
     }
 
     drawQuote() {
-        setText('quote', AppState.quote.content)
-        setText('author', AppState.quote.author)
+        setText('quote', AppState.quote?.quote)
+        setText('author', AppState.quote?.author)
     }
 }
